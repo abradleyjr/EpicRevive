@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clinical IV therapy protocols at Epic Revive, Superior Colorado. Physician-designed intravenous micronutrient programs for performance, recovery, and cellular health — not wellness trends." />
+  <meta name="robots" content="index, follow" />
+
+  <title>IV Therapy — Clinical Protocols | Epic Revive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    .page-header__bg {
+      background-image: url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1400&q=80');
+    }
+
+    .protocol-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+      margin-top: var(--space-2xl);
+    }
+
+    .protocol-tile {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      padding: var(--space-xl) var(--space-lg);
+      position: relative;
+    }
+
+    .protocol-tile__label {
+      display: block;
+      font-size: var(--text-xs);
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-taupe-dark);
+      margin-bottom: var(--space-sm);
+    }
+
+    .protocol-tile h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-sm);
+    }
+
+    .protocol-tile p {
+      font-size: var(--text-sm);
+      line-height: 1.75;
+    }
+
+    .protocol-tile__components {
+      margin-top: var(--space-md);
+      padding-top: var(--space-md);
+      border-top: 1px solid var(--color-border);
+      font-size: var(--text-xs);
+      color: var(--color-warm-gray);
+      letter-spacing: 0.03em;
+    }
+
+    .protocol-tile__components strong {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.65rem;
+      color: var(--color-taupe-dark);
+      margin-bottom: 0.35rem;
+    }
+
+    .disclaimer-block {
+      background-color: var(--color-taupe-light);
+      border: 1px solid var(--color-taupe);
+      padding: var(--space-lg) var(--space-xl);
+      margin-top: var(--space-2xl);
+    }
+
+    .disclaimer-block p {
+      font-size: var(--text-sm);
+      color: var(--color-charcoal);
+      font-style: italic;
+    }
+
+    @media (max-width: 1024px) {
+      .protocol-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .protocol-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Epic Revive Home">
+        <span class="nav__logo-name">Epic Revive</span>
+        <span class="nav__logo-tagline">Superior, Colorado</span>
+      </a>
+      <div class="nav__links">
+        <a href="weight-management.html" class="nav__link">Weight Management</a>
+        <a href="medical-aesthetics.html" class="nav__link">Medical Aesthetics</a>
+        <a href="iv-therapy.html" class="nav__link nav__link--active">IV Therapy</a>
+        <a href="health-optimization.html" class="nav__link">Health Optimization</a>
+      </div>
+      <a href="index.html#founding-access" class="nav__cta">Request Access</a>
+      <button class="nav__hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="nav-mobile">
+      <a href="weight-management.html" class="nav__mobile-link">Weight Management</a>
+      <a href="medical-aesthetics.html" class="nav__mobile-link">Medical Aesthetics</a>
+      <a href="iv-therapy.html" class="nav__mobile-link">IV Therapy</a>
+      <a href="health-optimization.html" class="nav__mobile-link">Health Optimization</a>
+      <a href="index.html#founding-access" class="nav__mobile-cta">Request Founding Access</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header" aria-labelledby="page-title">
+    <div class="page-header__bg" role="img" aria-label="Clinical IV therapy setting"></div>
+    <div class="container page-header__content">
+      <span class="eyebrow">Clinical Service</span>
+      <h1 id="page-title">IV Therapy<br/>&amp; Micronutrient Protocols</h1>
+      <p class="lead">
+        Structured intravenous therapy programs designed around physiological need
+        and clinical rationale — not wellness trends or novelty infusions.
+      </p>
+    </div>
+  </header>
+
+  <!-- INTRO SPLIT -->
+  <section aria-labelledby="iv-intro-heading">
+    <div class="split">
+      <div class="split__image">
+        <img
+          src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=900&q=80"
+          alt="Medical grade IV preparation in clinical setting"
+          loading="lazy"
+        />
+      </div>
+      <div class="split__content">
+        <span class="eyebrow">The Clinical Standard</span>
+        <div class="divider"></div>
+        <h2 id="iv-intro-heading">IV Therapy Without<br/>the Trend</h2>
+        <p class="lead" style="margin-top: var(--space-md);">
+          Intravenous therapy delivers nutrients, hydration, and therapeutic compounds
+          directly into the bloodstream — bypassing gastrointestinal absorption entirely.
+          This route of delivery can achieve concentrations and bioavailability that
+          oral supplementation cannot.
+        </p>
+        <p style="margin-top: var(--space-sm);">
+          At Epic Revive, IV protocols are not assembled from a menu. Each protocol is
+          selected based on your current health status, biomarker data, and specific
+          clinical objective. There are no novelty infusions here.
+        </p>
+        <p style="margin-top: var(--space-sm);">
+          All IV therapy at Epic Revive is physician-overseen. Compounded preparations
+          are sourced from licensed, FDA-registered compounding pharmacies. Every infusion
+          follows a structured clinical protocol.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY QUOTE -->
+  <section class="section section--dark" aria-label="Clinical philosophy">
+    <div class="container text-center">
+      <blockquote class="philosophy-quote">
+        "Intravenous therapy is a medical procedure. At Epic Revive, it is treated as one."
+        <cite>Ross Pavlik, M.D.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- PROTOCOLS -->
+  <section class="section" aria-labelledby="protocols-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Clinical IV Protocols</span>
+        <h2 id="protocols-heading">Structured Infusion Programs</h2>
+        <p>
+          Each protocol below is designed around a specific clinical objective.
+          Protocol selection and dosing are individualized following a physician consultation.
+        </p>
+      </div>
+
+      <div class="protocol-grid">
+
+        <div class="protocol-tile fade-in">
+          <span class="protocol-tile__label">Foundation</span>
+          <h3>Hydration &amp; Electrolyte Restoration</h3>
+          <p>
+            Isotonic crystalloid infusion with individualized electrolyte
+            correction. Appropriate for dehydration, post-travel recovery,
+            gastrointestinal illness, and baseline optimization.
+          </p>
+          <div class="protocol-tile__components">
+            <strong>Base Components</strong>
+            Lactated Ringer's or Normal Saline · Electrolyte panel · Magnesium
+          </div>
+        </div>
+
+        <div class="protocol-tile fade-in fade-in--delay-1">
+          <span class="protocol-tile__label">Micronutrient</span>
+          <h3>High-Dose Vitamin C Protocol</h3>
+          <p>
+            Intravenous ascorbic acid at therapeutic concentrations for immune
+            modulation, oxidative stress reduction, and collagen synthesis support.
+            Clinical concentrations not achievable through oral supplementation.
+          </p>
+          <div class="protocol-tile__components">
+            <strong>Core Components</strong>
+            Ascorbic acid (high-dose) · B-complex · Trace minerals
+          </div>
+        </div>
+
+        <div class="protocol-tile fade-in fade-in--delay-2">
+          <span class="protocol-tile__label">Metabolic</span>
+          <h3>Myers' Cocktail &amp; Micronutrient Infusion</h3>
+          <p>
+            A physician-modified formulation of the classic Myers' protocol
+            including magnesium, B vitamins, vitamin C, and calcium. Applicable
+            for fatigue, immune support, and baseline micronutrient replenishment.
+          </p>
+          <div class="protocol-tile__components">
+            <strong>Core Components</strong>
+            Magnesium · B5 · B6 · B12 · B-complex · Vitamin C · Calcium
+          </div>
+        </div>
+
+        <div class="protocol-tile fade-in">
+          <span class="protocol-tile__label">NAD+</span>
+          <h3>NAD+ Infusion Protocol</h3>
+          <p>
+            Nicotinamide adenine dinucleotide (NAD+) infusion for cellular energy
+            metabolism support, mitochondrial function, and neurological optimization.
+            Appropriate for longevity-focused patients and those with chronic fatigue.
+          </p>
+          <div class="protocol-tile__components">
+            <strong>Core Components</strong>
+            NAD+ · Supporting B vitamins · Hydration base
+          </div>
+        </div>
+
+        <div class="protocol-tile fade-in fade-in--delay-1">
+          <span class="protocol-tile__label">Recovery</span>
+          <h3>Athletic Recovery &amp; Performance Protocol</h3>
+          <p>
+            Structured post-exertion recovery infusion combining hydration,
+            amino acid replenishment, and anti-inflammatory micronutrients.
+            Designed for competitive athletes and high-output individuals.
+          </p>
+          <div class="protocol-tile__components">
+            <strong>Core Components</strong>
+            Amino acids · Glutathione · Zinc · Magnesium · B-complex · Hydration
+          </div>
+        </div>
+
+        <div class="protocol-tile fade-in fade-in--delay-2">
+          <span class="protocol-tile__label">Detox / Antioxidant</span>
+          <h3>Glutathione Push Protocol</h3>
+          <p>
+            Intravenous glutathione — the body's primary endogenous antioxidant —
+            for cellular detoxification support, skin brightness, liver support,
+            and oxidative stress reduction.
+          </p>
+          <div class="protocol-tile__components">
+            <strong>Core Components</strong>
+            Reduced glutathione · Vitamin C · Saline push
+          </div>
+        </div>
+
+      </div>
+
+      <div class="disclaimer-block">
+        <p>
+          <strong>Clinical Note:</strong> All protocols listed above are subject to individualized
+          modification based on your health history, current medications, lab values, and
+          clinical objective. Not all protocols are appropriate for all patients. Final
+          protocol selection is made by Dr. Pavlik following a medical consultation.
+          Compounded IV preparations are sourced exclusively from licensed, FDA-registered pharmacies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section section--taupe" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="eyebrow">Your First Visit</span>
+        <h2 id="process-heading">The IV Therapy Experience<br/>at Epic Revive</h2>
+      </div>
+
+      <div class="grid grid--3">
+        <div style="padding: var(--space-lg); text-align: center;" class="fade-in">
+          <p style="font-family: var(--font-heading); font-size: 3rem; color: var(--color-charcoal);">01</p>
+          <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-sm);">Health Intake</h3>
+          <p>Medical history, current medications, and clinical objectives reviewed by Dr. Pavlik prior to protocol selection.</p>
+        </div>
+        <div style="padding: var(--space-lg); text-align: center;" class="fade-in fade-in--delay-1">
+          <p style="font-family: var(--font-heading); font-size: 3rem; color: var(--color-charcoal);">02</p>
+          <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-sm);">Protocol Selection</h3>
+          <p>Protocol matched to your specific clinical need. Dosing, rate, and additions individualized to your physiology.</p>
+        </div>
+        <div style="padding: var(--space-lg); text-align: center;" class="fade-in fade-in--delay-2">
+          <p style="font-family: var(--font-heading); font-size: 3rem; color: var(--color-charcoal);">03</p>
+          <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-sm);">Monitored Infusion</h3>
+          <p>Infusion administered in a clean, private clinical setting. Vital signs monitored throughout. Dr. Pavlik available on-site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING STRIP -->
+  <section class="booking-strip" aria-label="Schedule an infusion">
+    <div class="container">
+      <div class="booking-strip__inner">
+        <div class="booking-strip__text">
+          <h3>Schedule an IV Consultation</h3>
+          <p>Protocol selection requires a brief intake. Founding members receive priority scheduling.</p>
+        </div>
+        <a href="index.html#founding-access" class="btn btn--primary">Request Access</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__brand-name">Epic Revive</p>
+          <p class="footer__brand-desc">A physician-directed medical clinic in Superior, Colorado. Founded by board-certified anesthesiologist Dr. Ross Pavlik.</p>
+          <address class="footer__address">Superior, Colorado<br/><a href="mailto:hello@epicrevive.com" style="color: var(--color-warm-gray);">hello@epicrevive.com</a></address>
+        </div>
+        <div>
+          <p class="footer__col-title">Services</p>
+          <ul class="footer__links">
+            <li><a href="weight-management.html" class="footer__link">Weight Management</a></li>
+            <li><a href="medical-aesthetics.html" class="footer__link">Medical Aesthetics</a></li>
+            <li><a href="iv-therapy.html" class="footer__link">IV Therapy</a></li>
+            <li><a href="health-optimization.html" class="footer__link">Health Optimization</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Clinic</p>
+          <ul class="footer__links">
+            <li><a href="index.html#founding-access" class="footer__link">Founding Access</a></li>
+            <li><a href="index.html#about-heading" class="footer__link">About Dr. Pavlik</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links">
+            <li><a href="index.html#founding-access" class="footer__link">Request Access</a></li>
+            <li><a href="mailto:hello@epicrevive.com" class="footer__link">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Epic Revive. All rights reserved. Superior, Colorado.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Use</a>
+          <a href="#" class="footer__legal-link">HIPAA Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

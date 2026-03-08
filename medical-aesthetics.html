@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Physician-administered medical aesthetics in Superior, Colorado. Neurotoxin, dermal fillers, and advanced skin treatments delivered by board-certified anesthesiologist Dr. Ross Pavlik, M.D." />
+  <meta name="robots" content="index, follow" />
+
+  <title>Medical Aesthetics — Injectables &amp; Skin Treatment | Epic Revive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    .page-header__bg {
+      background-image: url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1400&q=80');
+    }
+
+    .before-after-note {
+      background-color: var(--color-taupe-light);
+      border: 1px solid var(--color-taupe);
+      padding: var(--space-lg) var(--space-xl);
+      text-align: center;
+    }
+
+    .treatment-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-lg);
+    }
+
+    .treatment-card {
+      padding: var(--space-xl);
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      position: relative;
+    }
+
+    .treatment-card__category {
+      font-size: var(--text-xs);
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-taupe-dark);
+      margin-bottom: var(--space-sm);
+      display: block;
+    }
+
+    .treatment-card h3 {
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-sm);
+    }
+
+    .treatment-card p {
+      font-size: var(--text-sm);
+      margin-bottom: var(--space-md);
+    }
+
+    .treatment-card__note {
+      font-size: var(--text-xs);
+      color: var(--color-taupe-dark);
+      font-style: italic;
+      padding-top: var(--space-sm);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .physician-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      background-color: var(--color-charcoal);
+      color: var(--color-off-white);
+      padding: 0.5rem 1rem;
+      font-size: var(--text-xs);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-md);
+    }
+
+    @media (max-width: 768px) {
+      .treatment-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Epic Revive Home">
+        <span class="nav__logo-name">Epic Revive</span>
+        <span class="nav__logo-tagline">Superior, Colorado</span>
+      </a>
+      <div class="nav__links">
+        <a href="weight-management.html" class="nav__link">Weight Management</a>
+        <a href="medical-aesthetics.html" class="nav__link nav__link--active">Medical Aesthetics</a>
+        <a href="iv-therapy.html" class="nav__link">IV Therapy</a>
+        <a href="health-optimization.html" class="nav__link">Health Optimization</a>
+      </div>
+      <a href="index.html#founding-access" class="nav__cta">Request Access</a>
+      <button class="nav__hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="nav-mobile">
+      <a href="weight-management.html" class="nav__mobile-link">Weight Management</a>
+      <a href="medical-aesthetics.html" class="nav__mobile-link">Medical Aesthetics</a>
+      <a href="iv-therapy.html" class="nav__mobile-link">IV Therapy</a>
+      <a href="health-optimization.html" class="nav__mobile-link">Health Optimization</a>
+      <a href="index.html#founding-access" class="nav__mobile-cta">Request Founding Access</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header" aria-labelledby="page-title">
+    <div class="page-header__bg" role="img" aria-label="Clinical aesthetic setting"></div>
+    <div class="container page-header__content">
+      <span class="eyebrow">Clinical Service</span>
+      <h1 id="page-title">Medical Aesthetics</h1>
+      <p class="lead">
+        Injectables and advanced skin treatments administered with the anatomy
+        expertise of a board-certified physician — and a restrained, refined aesthetic.
+      </p>
+    </div>
+  </header>
+
+  <!-- PHYSICIAN DISTINCTION -->
+  <section class="section section--alt" aria-labelledby="distinction-heading">
+    <div class="container">
+      <div class="grid grid--2" style="align-items: center; gap: var(--space-3xl);">
+        <div class="fade-in">
+          <span class="physician-badge">Physician-Administered</span>
+          <span class="eyebrow">Why It Matters</span>
+          <div class="divider"></div>
+          <h2 id="distinction-heading">Anatomy-First<br/>Aesthetic Medicine</h2>
+          <p class="lead" style="margin-top: var(--space-md);">
+            Aesthetic outcomes are directly proportional to the injector's depth
+            of anatomical knowledge. Dr. Pavlik brings a level of anatomical
+            precision to aesthetic medicine that is rare in this field.
+          </p>
+          <p style="margin-top: var(--space-sm);">
+            As a board-certified anesthesiologist, Dr. Pavlik has spent two decades
+            with an intimate understanding of facial anatomy, vascular structures, and
+            tissue planes. This knowledge base translates directly into safer, more
+            precise aesthetic outcomes.
+          </p>
+          <p style="margin-top: var(--space-sm);">
+            At Epic Revive, every injectable treatment is administered by Dr. Pavlik
+            personally — not delegated to a nurse or aesthetician. Your face is not
+            a training exercise.
+          </p>
+        </div>
+        <div class="fade-in fade-in--delay-1">
+          <img
+            src="https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=800&q=80"
+            alt="Precision clinical aesthetic procedure"
+            loading="lazy"
+            style="width:100%; filter: grayscale(15%);"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY QUOTE -->
+  <section class="section section--dark" aria-label="Clinical philosophy">
+    <div class="container text-center">
+      <blockquote class="philosophy-quote">
+        "Aesthetic medicine practiced poorly is obvious. Practiced correctly,
+        it is invisible — the patient simply looks like a better version of themselves."
+        <cite>Ross Pavlik, M.D.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- TREATMENTS -->
+  <section class="section" aria-labelledby="treatments-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Services Offered</span>
+        <h2 id="treatments-heading">Injectable &amp; Skin<br/>Treatment Menu</h2>
+        <p>All treatments below are performed by Dr. Ross Pavlik, M.D. Consultations are required prior to all injectable procedures.</p>
+      </div>
+
+      <div class="treatment-grid">
+
+        <div class="treatment-card fade-in">
+          <span class="treatment-card__category">Neurotoxin</span>
+          <h3>Botox &amp; Dysport</h3>
+          <p>
+            Precision neurotoxin placement for dynamic wrinkle reduction. Treatment
+            areas include forehead lines, glabellar complex, crow's feet, brow lift,
+            lip lines, masseter reduction, and hyperhidrosis.
+          </p>
+          <p>
+            Results are calibrated for natural expression — not a frozen or
+            artificial appearance. Dosing is individualized to your facial anatomy
+            and desired outcome.
+          </p>
+          <p class="treatment-card__note">
+            Physician-administered. Consultation required. Results typically 3–4 months.
+          </p>
+        </div>
+
+        <div class="treatment-card fade-in fade-in--delay-1">
+          <span class="treatment-card__category">Dermal Fillers</span>
+          <h3>Hyaluronic Acid Fillers</h3>
+          <p>
+            Volume restoration and structural enhancement using premium HA fillers
+            (Juvederm, Restylane product lines). Appropriate for lip augmentation,
+            cheek enhancement, nasolabial fold softening, under-eye hollowing,
+            and jawline definition.
+          </p>
+          <p>
+            Deep anatomical knowledge ensures filler is placed at the correct tissue
+            plane — critical for both aesthetic outcomes and vascular safety.
+          </p>
+          <p class="treatment-card__note">
+            Physician-administered. Consultation required. Duration varies by product and area.
+          </p>
+        </div>
+
+        <div class="treatment-card fade-in">
+          <span class="treatment-card__category">Biostimulators</span>
+          <h3>Sculptra &amp; Radiesse</h3>
+          <p>
+            Collagen-stimulating biostimulatory agents for gradual, natural-appearing
+            volume restoration and skin quality improvement. Appropriate for patients
+            seeking longer-duration results and enhanced tissue quality.
+          </p>
+          <p>
+            Biostimulators require a protocol-based treatment series and are suited
+            for patients committed to a multi-visit aesthetic program.
+          </p>
+          <p class="treatment-card__note">
+            Physician-administered. Consultation required. Results develop over 2–3 months.
+          </p>
+        </div>
+
+        <div class="treatment-card fade-in fade-in--delay-1">
+          <span class="treatment-card__category">Advanced Skin</span>
+          <h3>Medical-Grade Skin Treatments</h3>
+          <p>
+            Chemical peels and medical-grade skin protocols for skin quality optimization,
+            texture improvement, and tone correction. Treatment selection is based on
+            skin type, Fitzpatrick classification, and specific concerns.
+          </p>
+          <p>
+            All skin protocols are overseen and recommended by Dr. Pavlik following
+            a medical skin assessment.
+          </p>
+          <p class="treatment-card__note">
+            Physician-overseen. Protocol varies by skin type and treatment goal.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING NOTE -->
+  <section class="section section--taupe" aria-label="Booking information">
+    <div class="container">
+      <div class="before-after-note">
+        <span class="eyebrow">Scheduling via Boulevard</span>
+        <h3 style="margin-top: var(--space-sm); font-size: var(--text-2xl);">Aesthetic Consultations &amp; Appointments</h3>
+        <p style="max-width: 52ch; margin: var(--space-sm) auto;">
+          All aesthetic appointments at Epic Revive are scheduled through Boulevard,
+          our secure clinical booking platform. Before-and-after photo documentation
+          is available and managed within the Boulevard system.
+        </p>
+        <p style="font-size: var(--text-sm); color: var(--color-warm-gray); margin-top: var(--space-sm);">
+          <em>A consultation is required prior to all first-time injectable appointments.</em>
+        </p>
+        <a href="index.html#founding-access" class="btn btn--primary" style="margin-top: var(--space-lg);">
+          Request Founding Access
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT TO EXPECT -->
+  <section class="section" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <span class="eyebrow">The Consultation Process</span>
+        <h2 id="process-heading">Before Every Appointment</h2>
+      </div>
+
+      <div class="service-list" style="max-width: 700px; margin: 0 auto;">
+        <div class="service-item">
+          <div>
+            <p class="service-item__name">Medical History Review</p>
+            <p class="service-item__desc">Contraindications, medications, prior aesthetic history</p>
+          </div>
+          <span class="service-item__arrow">→</span>
+        </div>
+        <div class="service-item">
+          <div>
+            <p class="service-item__name">Facial Assessment</p>
+            <p class="service-item__desc">Physician evaluation of facial anatomy, volume, and symmetry</p>
+          </div>
+          <span class="service-item__arrow">→</span>
+        </div>
+        <div class="service-item">
+          <div>
+            <p class="service-item__name">Treatment Planning</p>
+            <p class="service-item__desc">Individualized plan with product selection, dosing, and expected outcomes</p>
+          </div>
+          <span class="service-item__arrow">→</span>
+        </div>
+        <div class="service-item">
+          <div>
+            <p class="service-item__name">Informed Consent</p>
+            <p class="service-item__desc">Full discussion of risks, alternatives, and aftercare</p>
+          </div>
+          <span class="service-item__arrow">→</span>
+        </div>
+        <div class="service-item">
+          <div>
+            <p class="service-item__name">Photographic Documentation</p>
+            <p class="service-item__desc">Before photos captured and stored securely via Boulevard</p>
+          </div>
+          <span class="service-item__arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING STRIP -->
+  <section class="booking-strip" aria-label="Schedule a consultation">
+    <div class="container">
+      <div class="booking-strip__inner">
+        <div class="booking-strip__text">
+          <h3>Schedule an Aesthetic Consultation</h3>
+          <p>All procedures begin with a physician consultation. No walk-ins accepted.</p>
+        </div>
+        <a href="index.html#founding-access" class="btn btn--primary">Request Access</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__brand-name">Epic Revive</p>
+          <p class="footer__brand-desc">A physician-directed medical clinic in Superior, Colorado. Founded by board-certified anesthesiologist Dr. Ross Pavlik.</p>
+          <address class="footer__address">Superior, Colorado<br/><a href="mailto:hello@epicrevive.com" style="color: var(--color-warm-gray);">hello@epicrevive.com</a></address>
+        </div>
+        <div>
+          <p class="footer__col-title">Services</p>
+          <ul class="footer__links">
+            <li><a href="weight-management.html" class="footer__link">Weight Management</a></li>
+            <li><a href="medical-aesthetics.html" class="footer__link">Medical Aesthetics</a></li>
+            <li><a href="iv-therapy.html" class="footer__link">IV Therapy</a></li>
+            <li><a href="health-optimization.html" class="footer__link">Health Optimization</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Clinic</p>
+          <ul class="footer__links">
+            <li><a href="index.html#founding-access" class="footer__link">Founding Access</a></li>
+            <li><a href="index.html#about-heading" class="footer__link">About Dr. Pavlik</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links">
+            <li><a href="index.html#founding-access" class="footer__link">Request Access</a></li>
+            <li><a href="mailto:hello@epicrevive.com" class="footer__link">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Epic Revive. All rights reserved. Superior, Colorado.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Use</a>
+          <a href="#" class="footer__legal-link">HIPAA Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

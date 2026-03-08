@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Epic Revive is a physician-directed medical clinic in Superior, Colorado, founded by board-certified anesthesiologist Dr. Ross Pavlik. Offering weight management, medical aesthetics, IV therapy, and health optimization." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Epic Revive | Physician-Directed Medicine — Superior, Colorado" />
+  <meta property="og:description" content="Board-certified physician care in Superior, Colorado. Weight management, medical aesthetics, IV therapy, and health optimization." />
+  <meta property="og:type" content="website" />
+
+  <title>Epic Revive | Physician-Directed Medicine — Superior, Colorado</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* Page-specific overrides */
+    .hero__bg {
+      background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80');
+    }
+
+    .about-image {
+      background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80');
+      background-size: cover;
+      background-position: center top;
+      width: 100%;
+      aspect-ratio: 3/4;
+      filter: grayscale(15%);
+    }
+
+    .services-bg {
+      background-image: url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1200&q=80');
+    }
+
+    /* Founding access section */
+    .founding-section {
+      background-color: var(--color-charcoal);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .founding-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.08;
+    }
+
+    .founding-section .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Credential badge row */
+    .credential-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-top: var(--space-lg);
+    }
+
+    .pillar-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      filter: grayscale(20%);
+      margin-bottom: var(--space-md);
+    }
+
+    @media (max-width: 768px) {
+      .credential-badges {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================
+       NAVIGATION
+       ============================ -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Epic Revive Home">
+        <span class="nav__logo-name">Epic Revive</span>
+        <span class="nav__logo-tagline">Superior, Colorado</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="weight-management.html" class="nav__link">Weight Management</a>
+        <a href="medical-aesthetics.html" class="nav__link">Medical Aesthetics</a>
+        <a href="iv-therapy.html" class="nav__link">IV Therapy</a>
+        <a href="health-optimization.html" class="nav__link">Health Optimization</a>
+      </div>
+
+      <a href="#founding-access" class="nav__cta">Request Access</a>
+
+      <button class="nav__hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="nav-mobile" role="menu">
+      <a href="weight-management.html" class="nav__mobile-link">Weight Management</a>
+      <a href="medical-aesthetics.html" class="nav__mobile-link">Medical Aesthetics</a>
+      <a href="iv-therapy.html" class="nav__mobile-link">IV Therapy</a>
+      <a href="health-optimization.html" class="nav__mobile-link">Health Optimization</a>
+      <a href="#founding-access" class="nav__mobile-cta">Request Founding Access</a>
+    </div>
+  </nav>
+
+  <!-- ============================
+       HERO
+       ============================ -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero__bg" role="img" aria-label="Clinical environment"></div>
+
+    <div class="container hero__content">
+      <span class="eyebrow hero__eyebrow">Superior, Colorado — Physician-Directed Care</span>
+
+      <h1>
+        Medicine Practiced at Its<br/>
+        <em>Highest Standard</em>
+      </h1>
+
+      <p class="hero__body">
+        Epic Revive is a board-certified physician-directed clinic offering evidence-based protocols
+        in weight management, medical aesthetics, IV therapy, and preventive health optimization.
+        No shortcuts. No gimmicks. Measurable outcomes.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#founding-access" class="btn btn--ghost">Request Founding Access</a>
+        <a href="#services" class="btn" style="background:transparent; color: var(--color-taupe); border-color: transparent; padding-left: 0;">
+          Explore Services &nbsp;↓
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__divider"></div>
+  </section>
+
+  <!-- ============================
+       STATS BAR
+       ============================ -->
+  <section aria-label="Practice credentials">
+    <div class="stats-bar">
+      <div class="stat fade-in">
+        <span class="stat__number">20</span>
+        <span class="stat__label">Years Clinical Experience</span>
+      </div>
+      <div class="stat fade-in fade-in--delay-1">
+        <span class="stat__number">Board</span>
+        <span class="stat__label">Certified Anesthesiologist</span>
+      </div>
+      <div class="stat fade-in fade-in--delay-2">
+        <span class="stat__number">4</span>
+        <span class="stat__label">Core Medical Disciplines</span>
+      </div>
+      <div class="stat fade-in fade-in--delay-3">
+        <span class="stat__number">MD</span>
+        <span class="stat__label">Physician-Led Every Visit</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PHILOSOPHY QUOTE
+       ============================ -->
+  <section class="section section--alt" aria-label="Philosophy">
+    <div class="container text-center">
+      <blockquote class="philosophy-quote fade-in">
+        "Exceptional outcomes begin with exceptional medicine — not exceptional marketing."
+        <cite>Ross Pavlik, M.D. — Founder, Epic Revive</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============================
+       SERVICES
+       ============================ -->
+  <section class="section" id="services" aria-labelledby="services-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="eyebrow">Clinical Services</span>
+        <h2 id="services-heading">Four Pillars of<br/>Physician-Directed Care</h2>
+        <p class="lead" style="margin-top: var(--space-sm); max-width: 52ch;">
+          Each service at Epic Revive is structured around clinical evidence, delivered by a
+          board-certified physician, and designed to produce measurable results.
+        </p>
+      </div>
+
+      <div class="grid grid--4 fade-in">
+
+        <!-- Weight Management -->
+        <div class="pillar-card">
+          <span class="pillar-card__number">01</span>
+          <img
+            class="pillar-image"
+            src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=80"
+            alt="Clinical laboratory — weight management"
+            loading="lazy"
+          />
+          <h3 class="pillar-card__title">Weight<br/>Management</h3>
+          <p class="pillar-card__body">
+            GLP-1 therapies and metabolic optimization structured around clinical protocols
+            that address root cause — not symptom management.
+          </p>
+          <a href="weight-management.html" class="pillar-card__link">View Protocol</a>
+        </div>
+
+        <!-- Medical Aesthetics -->
+        <div class="pillar-card">
+          <span class="pillar-card__number">02</span>
+          <img
+            class="pillar-image"
+            src="https://images.unsplash.com/photo-1617897903246-719242758050?w=600&q=80"
+            alt="Clinical aesthetic environment"
+            loading="lazy"
+          />
+          <h3 class="pillar-card__title">Medical<br/>Aesthetics</h3>
+          <p class="pillar-card__body">
+            Injectable therapies and advanced skin treatments administered with the precision
+            of a board-certified physician and a restrained, refined aesthetic.
+          </p>
+          <a href="medical-aesthetics.html" class="pillar-card__link">View Services</a>
+        </div>
+
+        <!-- IV Therapy -->
+        <div class="pillar-card">
+          <span class="pillar-card__number">03</span>
+          <img
+            class="pillar-image"
+            src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&q=80"
+            alt="IV therapy clinical setting"
+            loading="lazy"
+          />
+          <h3 class="pillar-card__title">IV<br/>Therapy</h3>
+          <p class="pillar-card__body">
+            Structured intravenous therapy programs designed around physiological need
+            and supported by clinical rationale — not wellness trends.
+          </p>
+          <a href="iv-therapy.html" class="pillar-card__link">View Protocols</a>
+        </div>
+
+        <!-- Health Optimization -->
+        <div class="pillar-card">
+          <span class="pillar-card__number">04</span>
+          <img
+            class="pillar-image"
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80"
+            alt="Health optimization and longevity medicine"
+            loading="lazy"
+          />
+          <h3 class="pillar-card__title">Health<br/>Optimization</h3>
+          <p class="pillar-card__body">
+            Preventive and longevity medicine built on comprehensive biomarker analysis,
+            physician-designed protocols, and long-term performance goals.
+          </p>
+          <a href="health-optimization.html" class="pillar-card__link">View Programs</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       ABOUT THE FOUNDER
+       ============================ -->
+  <section class="section section--alt" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="founder">
+
+        <div class="founder__image-wrap fade-in">
+          <div class="about-image" role="img" aria-label="Dr. Ross Pavlik, M.D."></div>
+          <div class="founder__image-caption">
+            <strong>Ross Pavlik, M.D.</strong>
+            <span>Founder &amp; Medical Director</span>
+          </div>
+        </div>
+
+        <div class="founder__content fade-in fade-in--delay-1">
+          <span class="eyebrow">About the Founder</span>
+          <div class="divider"></div>
+          <h2 id="about-heading">20 Years at the<br/>Highest Level of Medicine</h2>
+          <p class="lead" style="margin-top: var(--space-md);">
+            Dr. Ross Pavlik is a board-certified anesthesiologist who has spent two decades
+            operating in clinical environments that demand precision, speed, and unwavering
+            accountability.
+          </p>
+          <p style="margin-top: var(--space-md);">
+            Having trained and practiced at the highest levels of acute medical care, Dr. Pavlik
+            founded Epic Revive to bring that same standard of disciplined, evidence-based medicine
+            to preventive care, aesthetics, and metabolic health.
+          </p>
+          <p style="margin-top: var(--space-sm);">
+            Epic Revive exists for patients who expect their physician to be accountable — not
+            just present. Every consultation, every protocol, every outcome is the direct
+            responsibility of Dr. Pavlik.
+          </p>
+
+          <div class="founder__credentials">
+            <div class="founder__credential">Board Certified in Anesthesiology</div>
+            <div class="founder__credential">20+ Years Clinical Practice</div>
+            <div class="founder__credential">Trained in Advanced Aesthetic Medicine</div>
+            <div class="founder__credential">GLP-1 &amp; Metabolic Optimization Specialist</div>
+            <div class="founder__credential">IV Therapy &amp; Micronutrient Protocol Expert</div>
+          </div>
+
+          <div class="credential-badges">
+            <span class="badge">Board Certified</span>
+            <span class="badge">M.D. — Anesthesiology</span>
+            <span class="badge">Superior, Colorado</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       APPROACH SECTION (SPLIT)
+       ============================ -->
+  <section aria-labelledby="approach-heading">
+    <div class="split">
+      <div class="split__image">
+        <img
+          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=900&q=80"
+          alt="Clean clinical environment at Epic Revive"
+          loading="lazy"
+        />
+      </div>
+      <div class="split__content">
+        <span class="eyebrow">Our Philosophy</span>
+        <div class="divider"></div>
+        <h2 id="approach-heading">Clinical Discipline.<br/>Refined Outcomes.</h2>
+        <p class="lead" style="margin-top: var(--space-md);">
+          At Epic Revive, medicine is practiced with the same rigor applied in the most
+          demanding clinical settings.
+        </p>
+        <p style="margin-top: var(--space-sm);">
+          We do not offer treatments that lack clinical justification. We do not oversell
+          results. We do not compromise on physician involvement. Every protocol begins
+          with a comprehensive medical assessment and is structured around your individual
+          physiology, history, and goals.
+        </p>
+        <p style="margin-top: var(--space-sm);">
+          This is not a wellness spa. This is a physician-directed clinic — and the
+          distinction matters.
+        </p>
+        <a href="#founding-access" class="btn btn--secondary" style="margin-top: var(--space-xl);">
+          Request Founding Access
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOUNDING ACCESS
+       ============================ -->
+  <section class="section founding-section" id="founding-access" aria-labelledby="founding-heading">
+    <div class="container">
+      <div style="max-width: 640px; margin: 0 auto; text-align: center;">
+        <span class="eyebrow" style="color: var(--color-taupe);">Limited Availability</span>
+        <div class="divider divider--center" style="background-color: var(--color-taupe);"></div>
+        <h2 id="founding-heading" style="color: var(--color-off-white);">
+          Founding Patient Access
+        </h2>
+        <p style="color: var(--color-taupe-light); margin-top: var(--space-sm); font-size: var(--text-lg);">
+          A limited number of founding patient positions are currently available.
+          Founding members receive priority scheduling, introductory pricing, and
+          direct physician access during the clinic's launch phase.
+        </p>
+      </div>
+
+      <div class="founding-access" style="margin-top: var(--space-2xl);">
+        <form id="founding-form" novalidate>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="first-name">First Name</label>
+              <input
+                class="form__input"
+                type="text"
+                id="first-name"
+                name="first_name"
+                placeholder="Ross"
+                required
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="last-name">Last Name</label>
+              <input
+                class="form__input"
+                type="text"
+                id="last-name"
+                name="last_name"
+                placeholder="Pavlik"
+                required
+                autocomplete="family-name"
+              />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="email">Email Address</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@email.com"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="phone">Phone Number <span style="font-weight:300; opacity:0.6;">(Optional)</span></label>
+            <input
+              class="form__input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(720) 000-0000"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="interest">Primary Interest</label>
+            <select class="form__select" id="interest" name="interest" required>
+              <option value="" disabled selected>Select a service area</option>
+              <option value="weight-management">Weight Management &amp; GLP-1 Therapy</option>
+              <option value="aesthetics">Medical Aesthetics &amp; Injectables</option>
+              <option value="iv-therapy">IV Therapy &amp; Micronutrient Protocols</option>
+              <option value="health-optimization">Health Optimization &amp; Longevity</option>
+              <option value="multiple">Multiple Services</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn--ghost form__submit">
+            Request Founding Access
+          </button>
+
+          <p class="form__disclaimer" style="color: var(--color-warm-gray);">
+            Your information is held in strict confidence. No spam. No third-party sharing.
+            A member of our team will reach out directly within 48 hours.
+          </p>
+
+          <!-- Success Message (hidden) -->
+          <div id="form-success" style="display:none; text-align:center; padding: var(--space-lg); border: 1px solid var(--color-taupe); margin-top: var(--space-md);">
+            <p style="color: var(--color-taupe-light); font-size: var(--text-lg);">
+              Thank you. We will be in touch within 48 hours.
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       BOOKING CTA
+       ============================ -->
+  <section class="booking-strip" aria-label="Book a consultation">
+    <div class="container">
+      <div class="booking-strip__inner">
+        <div class="booking-strip__text">
+          <h3>Ready to Begin?</h3>
+          <p>Scheduling is available via Boulevard — our secure clinical booking system.</p>
+        </div>
+        <a href="#founding-access" class="btn btn--primary">Schedule a Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+       ============================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__brand">
+          <p class="footer__brand-name">Epic Revive</p>
+          <p class="footer__brand-desc">
+            A physician-directed medical clinic in Superior, Colorado.
+            Founded by board-certified anesthesiologist Dr. Ross Pavlik.
+          </p>
+          <address class="footer__address">
+            Superior, Colorado<br/>
+            <a href="mailto:hello@epicrevive.com" style="color: var(--color-warm-gray); transition: color 0.2s;">
+              hello@epicrevive.com
+            </a>
+          </address>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Services</p>
+          <ul class="footer__links">
+            <li><a href="weight-management.html" class="footer__link">Weight Management</a></li>
+            <li><a href="medical-aesthetics.html" class="footer__link">Medical Aesthetics</a></li>
+            <li><a href="iv-therapy.html" class="footer__link">IV Therapy</a></li>
+            <li><a href="health-optimization.html" class="footer__link">Health Optimization</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Clinic</p>
+          <ul class="footer__links">
+            <li><a href="#founding-access" class="footer__link">Founding Access</a></li>
+            <li><a href="#about-heading" class="footer__link">About Dr. Pavlik</a></li>
+            <li><a href="#services" class="footer__link">Our Philosophy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links">
+            <li><a href="#founding-access" class="footer__link">Request Access</a></li>
+            <li><a href="#founding-access" class="footer__link">Schedule a Visit</a></li>
+            <li><a href="mailto:hello@epicrevive.com" class="footer__link">Email Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2025 Epic Revive. All rights reserved. Superior, Colorado.
+        </p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Use</a>
+          <a href="#" class="footer__legal-link">HIPAA Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
