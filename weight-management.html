@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weight Management &amp; GLP-1 Therapy | Epic Revive — Superior, Colorado</title>
+  <meta name="description" content="Physician-supervised GLP-1 weight management and metabolic optimization in Superior, Colorado. Structured clinical protocols — not a fad program. Epic Revive, founded by Dr. Ross Pavlik, MD." />
+  <meta name="keywords" content="GLP-1 weight loss Colorado, Wegovy Ozempic physician supervised, metabolic optimization Superior CO, medical weight management Boulder County" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231C1C1C'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' fill='%23C9C5BA' font-size='16' font-family='Georgia'>E</text></svg>" />
+
+  <style>
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-1);
+    }
+
+    .approach-card {
+      padding: var(--space-10) var(--space-8);
+      border: 1px solid var(--color-border);
+      background-color: var(--color-white);
+    }
+
+    .approach-card__num {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--color-taupe);
+      line-height: 1;
+      margin-bottom: var(--space-4);
+    }
+
+    .approach-card h4 {
+      margin-bottom: var(--space-3);
+    }
+
+    .approach-card p {
+      font-size: var(--text-sm);
+      max-width: none;
+    }
+
+    .process-timeline {
+      position: relative;
+      padding-left: var(--space-12);
+    }
+
+    .process-timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 1px;
+      background-color: var(--color-border);
+    }
+
+    .timeline-step {
+      position: relative;
+      padding-bottom: var(--space-10);
+    }
+
+    .timeline-step::before {
+      content: '';
+      position: absolute;
+      left: calc(-1 * var(--space-12) - 4px);
+      top: 6px;
+      width: 9px;
+      height: 9px;
+      border: 1px solid var(--color-taupe);
+      background-color: var(--color-off-white);
+      border-radius: 50%;
+    }
+
+    .timeline-step__label {
+      font-size: var(--text-xs);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-taupe);
+      font-weight: 500;
+      margin-bottom: var(--space-2);
+    }
+
+    .timeline-step h4 {
+      margin-bottom: var(--space-2);
+    }
+
+    .timeline-step p {
+      font-size: var(--text-sm);
+      max-width: 55ch;
+    }
+
+    .glp1-panel {
+      background-color: var(--color-charcoal);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .glp1-panel__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 400px;
+    }
+
+    .glp1-panel__content {
+      padding: var(--space-16) var(--space-12);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .glp1-panel__content h2 {
+      color: var(--color-off-white);
+      margin-bottom: var(--space-6);
+    }
+
+    .glp1-panel__content p {
+      color: var(--color-taupe);
+      margin-bottom: var(--space-4);
+    }
+
+    @media (max-width: 768px) {
+      .approach-grid {
+        grid-template-columns: 1fr;
+      }
+      .glp1-panel {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--light" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-name">Epic Revive</span>
+          <span class="nav__logo-tagline">Superior, Colorado</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="weight-management.html" class="nav__link active">Weight Management</a></li>
+          <li><a href="medical-aesthetics.html" class="nav__link">Aesthetics</a></li>
+          <li><a href="iv-therapy.html" class="nav__link">IV Therapy</a></li>
+          <li><a href="health-optimization.html" class="nav__link">Health Optimization</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:var(--space-4)">
+          <a href="index.html#founding-access-bottom" class="nav__cta">Request Access</a>
+          <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__drawer" id="nav-drawer">
+    <a href="weight-management.html" class="nav__link">Weight Management</a>
+    <a href="medical-aesthetics.html" class="nav__link">Aesthetics</a>
+    <a href="iv-therapy.html" class="nav__link">IV Therapy</a>
+    <a href="health-optimization.html" class="nav__link">Health Optimization</a>
+    <a href="index.html#founding-access-bottom" class="btn btn--primary" style="margin-top:var(--space-2)">Request Founding Access</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80&auto=format&fit=crop');" role="img" aria-label="Clinical weight management consultation"></div>
+    <div class="container page-hero__content" style="padding-bottom:var(--space-20);">
+      <span class="eyebrow" style="color:rgba(201,197,186,0.7)">Clinical Service</span>
+      <h1>Weight Management<br>&amp; Metabolic Medicine</h1>
+      <p class="lead">GLP-1 therapy and metabolic optimization delivered under direct physician supervision — with the rigor your health deserves.</p>
+    </div>
+  </section>
+
+  <!-- Clinical Statement -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:start;" class="fade-in">
+        <div>
+          <span class="eyebrow">Our Position</span>
+          <h2 style="margin-bottom:var(--space-6);">Weight is a medical issue, not a willpower issue</h2>
+          <div class="rule"></div>
+        </div>
+        <div>
+          <p style="margin-bottom:var(--space-4);">Obesity and metabolic dysfunction are complex, multifactorial conditions with well-established clinical pathways. At Epic Revive, we approach weight management the way we approach every clinical challenge: through assessment, data, and evidence-based intervention.</p>
+          <p style="margin-bottom:var(--space-4);">GLP-1 receptor agonists represent one of the most significant advances in metabolic medicine in decades. We deploy them with the precision and oversight that their pharmacological profile demands.</p>
+          <p>This is not a medically-supervised crash diet. This is a structured, physician-directed metabolic reset — monitored and adjusted in real time by a board-certified physician.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLP-1 Panel -->
+  <div class="glp1-panel fade-in">
+    <img
+      src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=900&q=80&auto=format&fit=crop"
+      alt="Laboratory precision in weight management"
+      class="glp1-panel__img"
+      loading="lazy"
+    />
+    <div class="glp1-panel__content">
+      <span class="eyebrow" style="color:rgba(201,197,186,0.5);">GLP-1 Therapy</span>
+      <h2>The science behind<br><em>sustainable results</em></h2>
+      <p>GLP-1 receptor agonists work by mimicking naturally occurring gut hormones that regulate appetite, insulin secretion, and gastric motility. The result is a clinically validated reduction in caloric intake, improved glycemic control, and measurable changes in body composition.</p>
+      <p>At Epic Revive, GLP-1 therapy is never prescribed in isolation. It is integrated into a comprehensive metabolic protocol that includes baseline lab assessment, ongoing monitoring, and dose titration based on clinical response — not a standing formula.</p>
+      <div class="rule" style="background-color:var(--color-taupe);margin:var(--space-8) 0;"></div>
+      <div style="display:flex;gap:var(--space-8);">
+        <div>
+          <div style="font-family:var(--font-heading);font-size:var(--text-2xl);color:var(--color-off-white);font-weight:300;">~15%</div>
+          <div style="font-size:var(--text-xs);letter-spacing:0.1em;text-transform:uppercase;color:rgba(201,197,186,0.5);">Avg. body weight reduction in clinical trials</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-heading);font-size:var(--text-2xl);color:var(--color-off-white);font-weight:300;">FDA</div>
+          <div style="font-size:var(--text-xs);letter-spacing:0.1em;text-transform:uppercase;color:rgba(201,197,186,0.5);">Approved agents only</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Protocol Approach -->
+  <section class="section--lg">
+    <div class="container">
+      <div class="text-center fade-in" style="margin-bottom:var(--space-12);">
+        <span class="eyebrow">Clinical Framework</span>
+        <h2>How our protocol works</h2>
+        <div class="rule rule--center"></div>
+        <p class="lead" style="max-width:48ch;margin:0 auto;">Every patient begins with a thorough clinical baseline. There is no universal protocol — only protocols tailored to your physiology.</p>
+      </div>
+
+      <div class="approach-grid fade-in">
+        <div class="approach-card">
+          <div class="approach-card__num">01</div>
+          <h4>Comprehensive Baseline Assessment</h4>
+          <p>Full metabolic panel, hormonal markers, body composition analysis, and a detailed clinical history. We measure before we prescribe — every time.</p>
+        </div>
+        <div class="approach-card">
+          <div class="approach-card__num">02</div>
+          <h4>Individualized Protocol Design</h4>
+          <p>Dr. Pavlik reviews your data personally and designs a therapeutic approach specific to your metabolic profile, starting dose, and treatment goals.</p>
+        </div>
+        <div class="approach-card">
+          <div class="approach-card__num">03</div>
+          <h4>Structured Titration &amp; Monitoring</h4>
+          <p>Medication is titrated according to clinical response — not a predetermined schedule. Dose adjustments are made by the physician based on ongoing assessment.</p>
+        </div>
+        <div class="approach-card">
+          <div class="approach-card__num">04</div>
+          <h4>Nutritional &amp; Lifestyle Integration</h4>
+          <p>Pharmacotherapy works best alongside evidence-based nutritional guidance. We provide structured dietary frameworks that complement, not compete with, your medication.</p>
+        </div>
+        <div class="approach-card">
+          <div class="approach-card__num">05</div>
+          <h4>Ongoing Biomarker Tracking</h4>
+          <p>Regular lab follow-ups track not just weight but the markers that matter: lipid profiles, glucose regulation, hepatic function, and lean mass preservation.</p>
+        </div>
+        <div class="approach-card">
+          <div class="approach-card__num">06</div>
+          <h4>Long-Term Sustainability Planning</h4>
+          <p>The goal is a new metabolic baseline — not dependency on a drug. Your exit strategy is part of the program from day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who This Is For -->
+  <section class="section" style="background-color:var(--color-taupe-light);">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center;" class="fade-in">
+        <div>
+          <span class="eyebrow">Candidacy</span>
+          <h2 style="margin-bottom:var(--space-4);">Is this program<br>right for you?</h2>
+          <div class="rule"></div>
+          <p style="margin-bottom:var(--space-4);">Our weight management program is appropriate for adults who have struggled with sustainable weight loss despite genuine lifestyle effort, and who meet clinical criteria for GLP-1 therapy or metabolic optimization.</p>
+          <p>We do not treat patients seeking rapid cosmetic weight reduction without clinical indication. Our practice is medical — and we hold the threshold accordingly.</p>
+        </div>
+        <div>
+          <div class="protocol-list">
+            <div class="protocol-item">
+              <div class="protocol-item__num">—</div>
+              <div class="protocol-item__content">
+                <h4>BMI ≥ 30, or BMI ≥ 27 with comorbidities</h4>
+                <p>Including hypertension, type 2 diabetes, hyperlipidemia, or sleep apnea.</p>
+              </div>
+            </div>
+            <div class="protocol-item">
+              <div class="protocol-item__num">—</div>
+              <div class="protocol-item__content">
+                <h4>History of sustained lifestyle effort</h4>
+                <p>Diet and exercise modification attempted without achieving sustainable results.</p>
+              </div>
+            </div>
+            <div class="protocol-item">
+              <div class="protocol-item__num">—</div>
+              <div class="protocol-item__content">
+                <h4>No contraindications to GLP-1 therapy</h4>
+                <p>Determined through comprehensive medical history and lab screening during your intake evaluation.</p>
+              </div>
+            </div>
+            <div class="protocol-item">
+              <div class="protocol-item__num">—</div>
+              <div class="protocol-item__content">
+                <h4>Commitment to the full protocol</h4>
+                <p>Results depend on adherence to monitoring, follow-up, and the integrated lifestyle framework.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section--lg">
+    <div class="container container--narrow">
+      <div class="fade-in" style="margin-bottom:var(--space-10);">
+        <span class="eyebrow">Common Questions</span>
+        <h2>Frequently asked questions</h2>
+        <div class="rule"></div>
+      </div>
+
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>Is this program only for GLP-1 medications?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>No. GLP-1 receptor agonists are one tool in our metabolic toolkit. Depending on your clinical profile, we may recommend GLP-1 therapy, metabolic optimization strategies without pharmacotherapy, or a combination approach. Your protocol is determined by your assessment — not a menu.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>How is this different from telehealth weight loss programs?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>This program involves in-person physician evaluation, hands-on monitoring, and direct access to a board-certified physician — not an algorithm or a mid-level provider working remotely. The clinical standard is fundamentally different, and the oversight reflects that.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>What medications do you use?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>We prescribe FDA-approved GLP-1 receptor agonists, including semaglutide (Ozempic/Wegovy) and tirzepatide (Mounjaro/Zepbound), as clinically appropriate. We do not prescribe compounded or unregulated formulations.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>Does insurance cover this program?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>Epic Revive operates as a private-pay medical practice. Insurance is not accepted for our clinical services. However, GLP-1 medications, when prescribed for a covered indication, may be submitted to your pharmacy benefit through your insurer separately. We provide detailed documentation to support any prior authorization requests.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>How long does the program run?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>Most patients engage in an active treatment phase of six to twelve months, followed by a maintenance and transition phase. Duration is individualized — the goal is a durable metabolic outcome, not a defined calendar endpoint.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section founding-section">
+    <div class="container cta-section">
+      <div class="fade-in">
+        <span class="eyebrow" style="color:rgba(201,197,186,0.5);">Get Started</span>
+        <h2 style="color:var(--color-off-white);">Begin with a<br><em>clinical consultation</em></h2>
+        <p style="color:var(--color-taupe);margin:0 auto var(--space-8);">Your first step is an intake consultation with Dr. Pavlik. No commitment required — just a clinical conversation about whether this program is the right fit.</p>
+        <a href="index.html#founding-access-bottom" class="btn btn--taupe">Request Founding Access</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo-name">Epic Revive</div>
+          <div class="footer__logo-tagline">Superior, Colorado</div>
+          <p>A physician-led medical clinic founded by Dr. Ross Pavlik, MD — board-certified anesthesiologist with over two decades of clinical practice.</p>
+        </div>
+        <div class="footer__nav">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="weight-management.html">Weight Management</a></li>
+            <li><a href="medical-aesthetics.html">Medical Aesthetics</a></li>
+            <li><a href="iv-therapy.html">IV Therapy</a></li>
+            <li><a href="health-optimization.html">Health Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h5>Practice</h5>
+          <ul>
+            <li><a href="index.html#founding-access-bottom">Founding Access</a></li>
+            <li><a href="index.html#founding-access-bottom">Schedule Consultation</a></li>
+            <li><a href="index.html">About Dr. Pavlik</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="index.html#founding-access-bottom">Request Appointment</a></li>
+            <li><a href="index.html">Superior, Colorado</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__legal">&copy; 2025 Epic Revive LLC. All rights reserved.</div>
+        <div class="footer__disclaimer">Medical information on this site is for informational purposes only and does not constitute medical advice. Individual results vary. Consult your physician before beginning any treatment program.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

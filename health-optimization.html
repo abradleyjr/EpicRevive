@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Optimization &amp; Longevity Medicine | Epic Revive — Superior, Colorado</title>
+  <meta name="description" content="Preventive and longevity medicine for executives and high-performers in Superior, Colorado. Physician-directed systems-level health assessment and optimization by Dr. Ross Pavlik, MD." />
+  <meta name="keywords" content="health optimization Superior Colorado, longevity medicine Boulder, executive health program Front Range, preventive medicine physician Colorado, biomarker optimization" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231C1C1C'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' fill='%23C9C5BA' font-size='16' font-family='Georgia'>E</text></svg>" />
+
+  <style>
+    .assessment-domains {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-1);
+    }
+
+    .domain-card {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      padding: var(--space-8);
+    }
+
+    .domain-card__header {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-4);
+      margin-bottom: var(--space-4);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .domain-card__num {
+      font-family: var(--font-heading);
+      font-size: var(--text-2xl);
+      font-weight: 300;
+      color: var(--color-taupe);
+      line-height: 1;
+    }
+
+    .domain-card h4 {
+      font-size: var(--text-md);
+      line-height: 1.2;
+    }
+
+    .domain-card__markers {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .domain-marker {
+      font-size: var(--text-xs);
+      color: var(--color-warm-gray);
+      padding-left: var(--space-4);
+      position: relative;
+    }
+
+    .domain-marker::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 6px;
+      height: 1px;
+      background-color: var(--color-taupe);
+    }
+
+    .who-section {
+      background-color: var(--color-charcoal);
+    }
+
+    .who-profiles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-10);
+    }
+
+    .who-profile {
+      border: 1px solid rgba(201,197,186,0.12);
+      padding: var(--space-8);
+    }
+
+    .who-profile h4 {
+      color: var(--color-off-white);
+      margin-bottom: var(--space-3);
+    }
+
+    .who-profile p {
+      font-size: var(--text-sm);
+      color: rgba(201,197,186,0.55);
+      max-width: none;
+    }
+
+    .program-phases {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-1);
+    }
+
+    .phase-card {
+      background-color: var(--color-taupe-light);
+      padding: var(--space-8) var(--space-6);
+      border: 1px solid var(--color-border);
+    }
+
+    .phase-card__step {
+      font-size: var(--text-xs);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-taupe);
+      margin-bottom: var(--space-3);
+    }
+
+    .phase-card h4 {
+      font-size: var(--text-md);
+      margin-bottom: var(--space-3);
+    }
+
+    .phase-card p {
+      font-size: var(--text-xs);
+      max-width: none;
+      line-height: 1.7;
+    }
+
+    .manifesto-block {
+      background-color: var(--color-charcoal);
+      padding: var(--space-20) 0;
+    }
+
+    .manifesto-text {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 3vw, var(--text-3xl));
+      font-weight: 300;
+      color: var(--color-off-white);
+      line-height: 1.5;
+      max-width: 640px;
+      font-style: italic;
+    }
+
+    .manifesto-text em {
+      color: var(--color-taupe);
+      font-style: normal;
+    }
+
+    @media (max-width: 1024px) {
+      .program-phases {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .assessment-domains {
+        grid-template-columns: 1fr;
+      }
+      .who-profiles {
+        grid-template-columns: 1fr;
+      }
+      .program-phases {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--light" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-name">Epic Revive</span>
+          <span class="nav__logo-tagline">Superior, Colorado</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="weight-management.html" class="nav__link">Weight Management</a></li>
+          <li><a href="medical-aesthetics.html" class="nav__link">Aesthetics</a></li>
+          <li><a href="iv-therapy.html" class="nav__link">IV Therapy</a></li>
+          <li><a href="health-optimization.html" class="nav__link active">Health Optimization</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:var(--space-4)">
+          <a href="index.html#founding-access-bottom" class="nav__cta">Request Access</a>
+          <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__drawer" id="nav-drawer">
+    <a href="weight-management.html" class="nav__link">Weight Management</a>
+    <a href="medical-aesthetics.html" class="nav__link">Aesthetics</a>
+    <a href="iv-therapy.html" class="nav__link">IV Therapy</a>
+    <a href="health-optimization.html" class="nav__link">Health Optimization</a>
+    <a href="index.html#founding-access-bottom" class="btn btn--primary" style="margin-top:var(--space-2)">Request Founding Access</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&q=80&auto=format&fit=crop');" role="img" aria-label="Health optimization and longevity medicine"></div>
+    <div class="container page-hero__content" style="padding-bottom:var(--space-20);">
+      <span class="eyebrow" style="color:rgba(201,197,186,0.7)">Clinical Service</span>
+      <h1>Health Optimization<br>&amp; Longevity Medicine</h1>
+      <p class="lead">A systems-level review of your metabolic, hormonal, and physiological profile — designed for those who treat their health as a long-term asset.</p>
+    </div>
+  </section>
+
+  <!-- Manifesto -->
+  <div class="manifesto-block">
+    <div class="container">
+      <p class="manifesto-text fade-in">
+        "The standard of care in conventional medicine is built around <em>disease management</em> — identifying pathology once it has already developed. We practice something different: finding the signals that precede disease by years or decades, and intervening before the damage is done."
+      </p>
+      <div style="margin-top:var(--space-6);">
+        <div style="font-size:var(--text-xs);letter-spacing:0.14em;text-transform:uppercase;color:rgba(201,197,186,0.4);">— Dr. Ross Pavlik, MD · Founder, Epic Revive</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Philosophy -->
+  <section class="section--lg">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:start;" class="fade-in">
+        <div>
+          <span class="eyebrow">Program Philosophy</span>
+          <h2 style="margin-bottom:var(--space-6);">Preventive medicine with<br>executive precision</h2>
+          <div class="rule"></div>
+          <p style="margin-bottom:var(--space-4);">Most annual physicals are designed to catch what has already gone wrong. Our health optimization program is built around a different question: what is currently suboptimal, and what does that mean for your trajectory over the next decade?</p>
+          <p style="margin-bottom:var(--space-4);">Using advanced biomarker panels, functional assessments, and physician-directed interpretation, we build a complete picture of your current health status — and a structured plan to improve it.</p>
+          <p>This program is not a supplement stack. It is a clinical engagement — the kind of medical attention that has historically been available only to those with access to executive concierge medicine.</p>
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80&auto=format&fit=crop"
+            alt="Clinical analysis and health data review"
+            style="width:100%;aspect-ratio:4/3;object-fit:cover;"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assessment Domains -->
+  <section class="section" style="background-color:var(--color-off-white);border-top:1px solid var(--color-border);">
+    <div class="container fade-in">
+      <div style="margin-bottom:var(--space-10);">
+        <span class="eyebrow">Assessment Framework</span>
+        <h2>Six domains of clinical review</h2>
+        <div class="rule"></div>
+        <p style="max-width:52ch;">Our baseline assessment covers the physiological systems most predictive of long-term health trajectory, cognitive performance, and disease risk.</p>
+      </div>
+
+      <div class="assessment-domains">
+        <div class="domain-card">
+          <div class="domain-card__header">
+            <div class="domain-card__num">I.</div>
+            <h4>Metabolic Health</h4>
+          </div>
+          <div class="domain-card__markers">
+            <div class="domain-marker">Fasting glucose &amp; insulin</div>
+            <div class="domain-marker">HbA1c (glycated hemoglobin)</div>
+            <div class="domain-marker">Advanced lipid panel (LDL-P, ApoB)</div>
+            <div class="domain-marker">Uric acid &amp; inflammatory markers</div>
+            <div class="domain-marker">Visceral fat assessment</div>
+          </div>
+        </div>
+
+        <div class="domain-card">
+          <div class="domain-card__header">
+            <div class="domain-card__num">II.</div>
+            <h4>Hormonal Profile</h4>
+          </div>
+          <div class="domain-card__markers">
+            <div class="domain-marker">Total &amp; free testosterone</div>
+            <div class="domain-marker">DHEA-S, SHBG</div>
+            <div class="domain-marker">Thyroid panel (TSH, T3, T4, rT3)</div>
+            <div class="domain-marker">Cortisol (morning, diurnal)</div>
+            <div class="domain-marker">IGF-1 (growth hormone axis)</div>
+          </div>
+        </div>
+
+        <div class="domain-card">
+          <div class="domain-card__header">
+            <div class="domain-card__num">III.</div>
+            <h4>Cardiovascular Risk</h4>
+          </div>
+          <div class="domain-card__markers">
+            <div class="domain-marker">Lipoprotein(a)</div>
+            <div class="domain-marker">hsCRP (high-sensitivity)</div>
+            <div class="domain-marker">Homocysteine</div>
+            <div class="domain-marker">Omega-3 index</div>
+            <div class="domain-marker">Blood pressure variability</div>
+          </div>
+        </div>
+
+        <div class="domain-card">
+          <div class="domain-card__header">
+            <div class="domain-card__num">IV.</div>
+            <h4>Nutritional Status</h4>
+          </div>
+          <div class="domain-card__markers">
+            <div class="domain-marker">Vitamin D (25-OH)</div>
+            <div class="domain-marker">B12 &amp; folate</div>
+            <div class="domain-marker">Ferritin &amp; iron studies</div>
+            <div class="domain-marker">Magnesium (RBC)</div>
+            <div class="domain-marker">Zinc &amp; selenium</div>
+          </div>
+        </div>
+
+        <div class="domain-card">
+          <div class="domain-card__header">
+            <div class="domain-card__num">V.</div>
+            <h4>Cognitive &amp; Neural Health</h4>
+          </div>
+          <div class="domain-card__markers">
+            <div class="domain-marker">APOE genotyping (optional)</div>
+            <div class="domain-marker">Sleep quality assessment</div>
+            <div class="domain-marker">Cognitive function screening</div>
+            <div class="domain-marker">Neurotransmitter precursors</div>
+            <div class="domain-marker">Stress biomarkers</div>
+          </div>
+        </div>
+
+        <div class="domain-card">
+          <div class="domain-card__header">
+            <div class="domain-card__num">VI.</div>
+            <h4>Cellular &amp; Longevity Markers</h4>
+          </div>
+          <div class="domain-card__markers">
+            <div class="domain-marker">Telomere length (optional)</div>
+            <div class="domain-marker">NAD+ metabolomics</div>
+            <div class="domain-marker">Oxidative stress markers</div>
+            <div class="domain-marker">Biological age estimation</div>
+            <div class="domain-marker">Mitochondrial function indices</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who This Is For -->
+  <section class="section--lg who-section">
+    <div class="container">
+      <div class="fade-in">
+        <span class="eyebrow" style="color:rgba(201,197,186,0.5);">Who We Serve</span>
+        <h2 style="color:var(--color-off-white);max-width:22ch;">This program is built for people who take their health seriously</h2>
+        <div class="rule" style="background-color:var(--color-taupe);"></div>
+        <p style="color:var(--color-taupe);max-width:52ch;">Health optimization is not for everyone — not because it is exclusive, but because it requires a particular kind of patient: someone willing to engage, track, and act on data.</p>
+
+        <div class="who-profiles">
+          <div class="who-profile">
+            <h4>High-Output Professionals</h4>
+            <p>Executives, founders, and senior leaders who understand that cognitive and physical performance is directly tied to their ability to operate at their best — and who want their healthcare to reflect that.</p>
+          </div>
+          <div class="who-profile">
+            <h4>Athletes &amp; Performance-Focused Individuals</h4>
+            <p>Competitive athletes and highly active individuals seeking optimization beyond what conventional sports medicine typically addresses: recovery, hormonal balance, and metabolic efficiency.</p>
+          </div>
+          <div class="who-profile">
+            <h4>Proactive Health Investors</h4>
+            <p>Individuals in their 30s, 40s, and 50s who recognize that the decisions made now determine the trajectory of the next two decades — and who want physician-level guidance in making them.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Phases -->
+  <section class="section--lg">
+    <div class="container">
+      <div class="fade-in" style="margin-bottom:var(--space-10);">
+        <span class="eyebrow">Program Structure</span>
+        <h2>Four phases of engagement</h2>
+        <div class="rule"></div>
+        <p style="max-width:52ch;">Health optimization is a process, not an appointment. Our program is structured to build progressively, with each phase informed by the one before it.</p>
+      </div>
+
+      <div class="program-phases fade-in">
+        <div class="phase-card">
+          <div class="phase-card__step">Phase 01</div>
+          <h4>Comprehensive Baseline</h4>
+          <p>Full biomarker panel, body composition analysis, lifestyle assessment, and an extended physician consultation to map your current baseline across all six domains.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-card__step">Phase 02</div>
+          <h4>Data Review &amp; Planning</h4>
+          <p>Dr. Pavlik reviews all results personally and develops a structured intervention plan with specific, measurable targets — not generic lifestyle advice.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-card__step">Phase 03</div>
+          <h4>Active Intervention</h4>
+          <p>Protocol implementation: targeted supplementation, pharmaceutical support where indicated (HRT, peptides, metabolic agents), and structured lifestyle architecture.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-card__step">Phase 04</div>
+          <h4>Monitoring &amp; Iteration</h4>
+          <p>Quarterly biomarker reviews and physician check-ins to assess response, adjust interventions, and track progress against your established baseline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hormone Optimization Note -->
+  <section class="section" style="background-color:var(--color-taupe-light);border-top:1px solid var(--color-border);">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center;" class="fade-in">
+        <div>
+          <span class="eyebrow">Hormone Optimization</span>
+          <h2 style="margin-bottom:var(--space-4);">TRT &amp; Hormonal<br>Rebalancing</h2>
+          <div class="rule"></div>
+          <p style="margin-bottom:var(--space-4);">Hormonal imbalance — in testosterone, thyroid function, cortisol, or other axes — has measurable consequences for energy, cognition, body composition, and mood. These are not lifestyle issues. They are clinical findings that require clinical management.</p>
+          <p>Where labs and symptoms support a diagnosis of hormonal insufficiency, Dr. Pavlik develops individualized hormone optimization protocols using evidence-based approaches, with ongoing monitoring to ensure both efficacy and safety.</p>
+        </div>
+        <div class="protocol-list">
+          <div class="protocol-item">
+            <div class="protocol-item__num">—</div>
+            <div class="protocol-item__content">
+              <h4>Testosterone Replacement Therapy (TRT)</h4>
+              <p>Physician-prescribed and monitored TRT for men with confirmed hypogonadism — not an off-label shortcut to performance enhancement.</p>
+            </div>
+          </div>
+          <div class="protocol-item">
+            <div class="protocol-item__num">—</div>
+            <div class="protocol-item__content">
+              <h4>Thyroid Optimization</h4>
+              <p>Full thyroid panel analysis and, where indicated, targeted thyroid support that goes beyond the TSH-only standard of most primary care settings.</p>
+            </div>
+          </div>
+          <div class="protocol-item">
+            <div class="protocol-item__num">—</div>
+            <div class="protocol-item__content">
+              <h4>Adrenal &amp; Cortisol Support</h4>
+              <p>Assessment of the HPA axis and targeted interventions for patients with documented cortisol dysregulation affecting energy and resilience.</p>
+            </div>
+          </div>
+          <div class="protocol-item">
+            <div class="protocol-item__num">—</div>
+            <div class="protocol-item__content">
+              <h4>Peptide Therapy</h4>
+              <p>Physician-directed peptide protocols (CJC/Ipamorelin, BPC-157, and others) for recovery, body composition, and cellular repair — where clinical evidence supports use.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section--lg">
+    <div class="container container--narrow">
+      <div class="fade-in" style="margin-bottom:var(--space-10);">
+        <span class="eyebrow">Questions</span>
+        <h2>What patients ask</h2>
+        <div class="rule"></div>
+      </div>
+
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>Is this program only for men?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>No. Health optimization applies equally to men and women. Hormonal assessment, metabolic analysis, and longevity-focused interventions are relevant across sexes, with sex-appropriate protocols applied where indicated.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>How is this different from a concierge primary care practice?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>Concierge primary care typically provides better access to conventional medicine — same or next-day appointments, longer visit times. Our program goes further: it is explicitly focused on optimization, advanced biomarker analysis, hormonal medicine, and longevity strategies that are largely outside the scope of standard primary care.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>Do I still need a primary care physician?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>Yes. Epic Revive is not a primary care practice. We do not manage chronic disease, perform acute sick visits, or serve as a patient's sole medical provider. We strongly recommend maintaining a relationship with a primary care physician and are happy to share documentation with your PCP where appropriate.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>What is the annual cost of the program?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>Program pricing is individualized based on scope of assessment and intervention. All costs are discussed transparently at your initial consultation. We do not accept insurance for this program, and detailed receipts are provided for potential HSA/FSA reimbursement.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>How long before I notice results?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>Timeline depends on what we find and what interventions are applied. Some patients notice meaningful improvements in energy, sleep, and mental clarity within six to eight weeks of starting a targeted protocol. Biomarker improvements are typically measured at the three-month mark. This is a longitudinal engagement — not a quick fix.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section founding-section">
+    <div class="container cta-section">
+      <div class="fade-in">
+        <span class="eyebrow" style="color:rgba(201,197,186,0.5);">Begin</span>
+        <h2 style="color:var(--color-off-white);">Invest in a<br><em>complete baseline</em></h2>
+        <p style="color:var(--color-taupe);margin:0 auto var(--space-8);">Your health optimization journey begins with a comprehensive clinical assessment. Request founding access and we'll schedule your intake consultation with Dr. Pavlik.</p>
+        <a href="index.html#founding-access-bottom" class="btn btn--taupe">Request Founding Access</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo-name">Epic Revive</div>
+          <div class="footer__logo-tagline">Superior, Colorado</div>
+          <p>A physician-led medical clinic founded by Dr. Ross Pavlik, MD — board-certified anesthesiologist with over two decades of clinical practice.</p>
+        </div>
+        <div class="footer__nav">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="weight-management.html">Weight Management</a></li>
+            <li><a href="medical-aesthetics.html">Medical Aesthetics</a></li>
+            <li><a href="iv-therapy.html">IV Therapy</a></li>
+            <li><a href="health-optimization.html">Health Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h5>Practice</h5>
+          <ul>
+            <li><a href="index.html#founding-access-bottom">Founding Access</a></li>
+            <li><a href="index.html#founding-access-bottom">Schedule Consultation</a></li>
+            <li><a href="index.html">About Dr. Pavlik</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="index.html#founding-access-bottom">Request Appointment</a></li>
+            <li><a href="index.html">Superior, Colorado</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__legal">&copy; 2025 Epic Revive LLC. All rights reserved.</div>
+        <div class="footer__disclaimer">Medical information on this site is for informational purposes only and does not constitute medical advice. Individual results vary. Consult your physician before beginning any treatment program.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Aesthetics | Epic Revive — Superior, Colorado</title>
+  <meta name="description" content="Precision injectable treatments and medical-grade skin protocols administered by a board-certified anesthesiologist in Superior, Colorado. Refined results. Clinical precision." />
+  <meta name="keywords" content="medical aesthetics Superior Colorado, Botox physician administered Boulder, dermal fillers anesthesiologist, medical grade skin treatment Front Range CO" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231C1C1C'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' fill='%23C9C5BA' font-size='16' font-family='Georgia'>E</text></svg>" />
+
+  <style>
+    .services-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .services-table thead th {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--color-warm-gray);
+      padding: var(--space-3) var(--space-4);
+      border-bottom: 1px solid var(--color-border);
+      text-align: left;
+    }
+
+    .services-table tbody tr {
+      border-bottom: 1px solid var(--color-border);
+      transition: background-color var(--transition-base);
+    }
+
+    .services-table tbody tr:hover {
+      background-color: var(--color-taupe-light);
+    }
+
+    .services-table td {
+      padding: var(--space-5) var(--space-4);
+      vertical-align: top;
+    }
+
+    .services-table td:first-child {
+      font-family: var(--font-heading);
+      font-size: var(--text-lg);
+      font-weight: 400;
+      color: var(--color-charcoal);
+    }
+
+    .services-table td:not(:first-child) {
+      font-size: var(--text-sm);
+      color: var(--color-warm-gray);
+    }
+
+    .differentiator-block {
+      background-color: var(--color-charcoal);
+      padding: var(--space-16) var(--space-12);
+    }
+
+    .aesthetic-pillars {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
+    }
+
+    .aesthetic-pillar {
+      padding: var(--space-8);
+      border: 1px solid var(--color-border);
+    }
+
+    .aesthetic-pillar h4 {
+      margin-bottom: var(--space-3);
+    }
+
+    .aesthetic-pillar p {
+      font-size: var(--text-sm);
+      max-width: none;
+    }
+
+    .before-after-note {
+      background-color: var(--color-taupe-light);
+      border-left: 2px solid var(--color-taupe);
+      padding: var(--space-6) var(--space-8);
+      font-size: var(--text-sm);
+      color: var(--color-warm-gray);
+    }
+
+    @media (max-width: 768px) {
+      .aesthetic-pillars {
+        grid-template-columns: 1fr;
+      }
+      .services-table thead { display: none; }
+      .services-table td { display: block; padding: var(--space-2) 0; }
+      .services-table td:first-child { font-size: var(--text-md); border-bottom: none; }
+      .services-table tr { display: block; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-border); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--light" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-name">Epic Revive</span>
+          <span class="nav__logo-tagline">Superior, Colorado</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="weight-management.html" class="nav__link">Weight Management</a></li>
+          <li><a href="medical-aesthetics.html" class="nav__link active">Aesthetics</a></li>
+          <li><a href="iv-therapy.html" class="nav__link">IV Therapy</a></li>
+          <li><a href="health-optimization.html" class="nav__link">Health Optimization</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:var(--space-4)">
+          <a href="index.html#founding-access-bottom" class="nav__cta">Request Access</a>
+          <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__drawer" id="nav-drawer">
+    <a href="weight-management.html" class="nav__link">Weight Management</a>
+    <a href="medical-aesthetics.html" class="nav__link">Aesthetics</a>
+    <a href="iv-therapy.html" class="nav__link">IV Therapy</a>
+    <a href="health-optimization.html" class="nav__link">Health Optimization</a>
+    <a href="index.html#founding-access-bottom" class="btn btn--primary" style="margin-top:var(--space-2)">Request Founding Access</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1600&q=80&auto=format&fit=crop');" role="img" aria-label="Medical aesthetics treatment setting"></div>
+    <div class="container page-hero__content" style="padding-bottom:var(--space-20);">
+      <span class="eyebrow" style="color:rgba(201,197,186,0.7)">Clinical Service</span>
+      <h1>Medical Aesthetics</h1>
+      <p class="lead">Injectable treatments and skin refinement administered with the precision of a specialist whose expertise begins — and extends far beyond — the surface.</p>
+    </div>
+  </section>
+
+  <!-- Positioning Statement -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:start;" class="fade-in">
+        <div>
+          <span class="eyebrow">Our Approach</span>
+          <h2 style="margin-bottom:var(--space-6);">Aesthetics as<br>a medical discipline</h2>
+          <div class="rule"></div>
+        </div>
+        <div>
+          <p style="margin-bottom:var(--space-4);">Most aesthetic practitioners operate within a narrow window of anatomical knowledge. Dr. Pavlik brings twenty years of surgical-level understanding of tissue planes, vascular anatomy, and pharmacodynamics to every injectable treatment.</p>
+          <p style="margin-bottom:var(--space-4);">The difference is not incidental. It determines precision, safety, and the quality of your result. When a physician who has spent two decades in operating rooms administers your treatment, the standard of care is categorically different.</p>
+          <p>Our aesthetic philosophy is one of restraint. The objective is never to create a result that announces itself — it is to restore, refine, and support what is already yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Table -->
+  <section class="section" style="background-color:var(--color-white);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+    <div class="container fade-in">
+      <div style="margin-bottom:var(--space-10);">
+        <span class="eyebrow">Treatment Menu</span>
+        <h2>Injectable &amp; Skin Services</h2>
+        <div class="rule"></div>
+        <p style="max-width:52ch;">All treatments are performed or directly supervised by Dr. Pavlik. Pricing is available upon consultation and varies based on individual assessment.</p>
+      </div>
+
+      <table class="services-table" aria-label="Aesthetic treatment services">
+        <thead>
+          <tr>
+            <th>Treatment</th>
+            <th>Clinical Application</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Neuromodulators<br><small style="font-family:var(--font-body);font-size:var(--text-xs);color:var(--color-warm-gray);">Botox · Dysport · Daxxify</small></td>
+            <td>Forehead lines, glabellar complex, crow's feet, brow elevation, masseter reduction, hyperhidrosis</td>
+            <td>Physician-administered only. Dosing guided by anatomical mapping, not fixed units.</td>
+          </tr>
+          <tr>
+            <td>Dermal Fillers<br><small style="font-family:var(--font-body);font-size:var(--text-xs);color:var(--color-warm-gray);">HA · Calcium Hydroxylapatite</small></td>
+            <td>Mid-face volume, jawline definition, lip structure, perioral support, temple restoration</td>
+            <td>Vascular anatomy reviewed prior to injection. Cannula technique preferred where indicated.</td>
+          </tr>
+          <tr>
+            <td>Medical-Grade Skin Protocols</td>
+            <td>Skin quality improvement, texture refinement, pigmentation, collagen stimulation</td>
+            <td>Prescription-grade agents where appropriate. No retail product peel promotions.</td>
+          </tr>
+          <tr>
+            <td>Skin Biostimulators<br><small style="font-family:var(--font-body);font-size:var(--text-xs);color:var(--color-warm-gray);">Sculptra · Radiesse</small></td>
+            <td>Collagen stimulation, volumetric lift, facial scaffolding restoration</td>
+            <td>Appropriate for patients seeking gradual, sustained improvement rather than immediate filler effect.</td>
+          </tr>
+          <tr>
+            <td>Combination Planning Sessions</td>
+            <td>Multi-treatment roadmapping and staged aesthetic planning</td>
+            <td>Recommended for patients seeking comprehensive facial rejuvenation. No upselling — only clinical guidance.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="before-after-note" style="margin-top:var(--space-8);">
+        <strong style="font-size:var(--text-sm);color:var(--color-charcoal);">Before &amp; After Documentation</strong><br/>
+        Epic Revive maintains clinical photography for all injectable patients, with patient consent, in accordance with HIPAA standards. Results documentation is available for review at your consultation.
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Physician Matters -->
+  <section class="section--lg" style="background-color:var(--color-charcoal);">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center;" class="fade-in">
+        <div>
+          <span class="eyebrow" style="color:rgba(201,197,186,0.5);">Clinical Advantage</span>
+          <h2 style="color:var(--color-off-white);margin-bottom:var(--space-4);">Why the physician's hands matter</h2>
+          <div class="rule" style="background-color:var(--color-taupe);"></div>
+          <p style="color:var(--color-taupe);margin-bottom:var(--space-4);">Aesthetic medicine has a complication problem — not because the treatments are inherently dangerous, but because they are too frequently administered by practitioners without the training to recognize or manage adverse events.</p>
+          <p style="color:var(--color-taupe);margin-bottom:var(--space-4);">Vascular occlusion, tissue necrosis, and improper plane injection are medical events. They require a medical response. Dr. Pavlik's training as an anesthesiologist — in airway management, vascular access, and pharmacological reversal — provides a level of emergency preparedness that simply does not exist in most aesthetic settings.</p>
+          <p style="color:var(--color-taupe);">You are not just buying a better injector. You are buying a margin of safety that most clinics cannot offer.</p>
+        </div>
+        <div class="aesthetic-pillars">
+          <div class="aesthetic-pillar" style="border-color:rgba(201,197,186,0.12);background:rgba(201,197,186,0.04);">
+            <h4 style="color:var(--color-off-white);">Anatomical Precision</h4>
+            <p style="color:rgba(201,197,186,0.6);">Two decades of surgical anatomy provide an understanding of tissue planes, vascular landmarks, and injection depth that cannot be replicated in a weekend course.</p>
+          </div>
+          <div class="aesthetic-pillar" style="border-color:rgba(201,197,186,0.12);background:rgba(201,197,186,0.04);">
+            <h4 style="color:var(--color-off-white);">Complication Management</h4>
+            <p style="color:rgba(201,197,186,0.6);">In the event of an adverse event, Dr. Pavlik has the training, the agents, and the clinical judgment to respond immediately and appropriately.</p>
+          </div>
+          <div class="aesthetic-pillar" style="border-color:rgba(201,197,186,0.12);background:rgba(201,197,186,0.04);">
+            <h4 style="color:var(--color-off-white);">Restrained Aesthetics</h4>
+            <p style="color:rgba(201,197,186,0.6);">Our goal is never more product. It is the right product, in the right amount, in the right location — with a result that respects your natural architecture.</p>
+          </div>
+          <div class="aesthetic-pillar" style="border-color:rgba(201,197,186,0.12);background:rgba(201,197,186,0.04);">
+            <h4 style="color:var(--color-off-white);">No Commission Model</h4>
+            <p style="color:rgba(201,197,186,0.6);">Treatment recommendations are made on clinical merit. There are no per-unit incentives, no upselling protocols, and no minimum product requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Process -->
+  <section class="section--lg">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);" class="fade-in">
+        <div>
+          <span class="eyebrow">Process</span>
+          <h2 style="margin-bottom:var(--space-4);">Your aesthetic consultation</h2>
+          <div class="rule"></div>
+          <p style="margin-bottom:var(--space-6);">Every aesthetic patient begins with a structured consultation — not a sales conversation. We review your anatomy, discuss your goals honestly, and present a treatment recommendation based on clinical assessment, not product availability.</p>
+          <p>Photography is taken before and after every treatment series. Results are tracked, documented, and discussed at each follow-up visit.</p>
+        </div>
+        <div class="process-timeline">
+          <div class="timeline-step">
+            <div class="timeline-step__label">Step 01</div>
+            <h4>Clinical Intake &amp; Photography</h4>
+            <p>Structured facial analysis, medical history review, and clinical photography in standardized lighting — the same documentation standard used in academic medical centers.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-step__label">Step 02</div>
+            <h4>Physician Assessment</h4>
+            <p>Dr. Pavlik reviews your anatomy in person, discusses your areas of concern, and presents an honest assessment — including what treatment can and cannot realistically achieve.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-step__label">Step 03</div>
+            <h4>Treatment Recommendation</h4>
+            <p>A specific, measured treatment plan is provided in writing. No time-limited promotions, no same-day pressure. You decide when you are ready.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-step__label">Step 04</div>
+            <h4>Treatment &amp; Documentation</h4>
+            <p>Treatments are performed with clinical precision, post-treatment photography taken, and care instructions provided. Follow-up is scheduled at the same appointment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background-color:var(--color-taupe-light);">
+    <div class="container container--narrow">
+      <div class="fade-in" style="margin-bottom:var(--space-10);">
+        <span class="eyebrow">Questions</span>
+        <h2>What patients ask</h2>
+        <div class="rule"></div>
+      </div>
+
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>Do you offer package deals or bundled pricing?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>No. Bundled aesthetic packages are a retail model that creates a financial incentive to provide more treatment than clinically indicated. Our pricing is transparent and reflects the specific treatment performed — nothing more.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>What is your approach to lip filler?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>We approach lip augmentation conservatively and anatomically. The goal is structural support and proportion — not volume as an aesthetic statement. We decline requests for results that, in our clinical judgment, will compromise facial harmony.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>How is this different from a med spa?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>At Epic Revive, your injector is the physician who owns the practice — not a nurse or PA working under a distant physician of record. The regulatory designation "medical spa" can mask significant variation in actual physician involvement. Here, there is no ambiguity.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger">
+            <h4>Can you dissolve or correct previous filler work?</h4>
+            <div class="faq-item__icon"></div>
+          </button>
+          <div class="faq-item__body">
+            <p>Yes. Hyaluronic acid-based fillers can be dissolved with hyaluronidase. If you are experiencing irregularities, migration, or simply want to return to baseline before starting fresh, we can assess and address prior work during your consultation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section founding-section">
+    <div class="container cta-section">
+      <div class="fade-in">
+        <span class="eyebrow" style="color:rgba(201,197,186,0.5);">Begin</span>
+        <h2 style="color:var(--color-off-white);">Schedule your<br><em>aesthetic consultation</em></h2>
+        <p style="color:var(--color-taupe);margin:0 auto var(--space-8);">An honest consultation with no obligation. We'll review your anatomy, discuss your goals, and tell you plainly what treatment can achieve for you.</p>
+        <a href="index.html#founding-access-bottom" class="btn btn--taupe">Request Founding Access</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo-name">Epic Revive</div>
+          <div class="footer__logo-tagline">Superior, Colorado</div>
+          <p>A physician-led medical clinic founded by Dr. Ross Pavlik, MD — board-certified anesthesiologist with over two decades of clinical practice.</p>
+        </div>
+        <div class="footer__nav">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="weight-management.html">Weight Management</a></li>
+            <li><a href="medical-aesthetics.html">Medical Aesthetics</a></li>
+            <li><a href="iv-therapy.html">IV Therapy</a></li>
+            <li><a href="health-optimization.html">Health Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h5>Practice</h5>
+          <ul>
+            <li><a href="index.html#founding-access-bottom">Founding Access</a></li>
+            <li><a href="index.html#founding-access-bottom">Schedule Consultation</a></li>
+            <li><a href="index.html">About Dr. Pavlik</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="index.html#founding-access-bottom">Request Appointment</a></li>
+            <li><a href="index.html">Superior, Colorado</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__legal">&copy; 2025 Epic Revive LLC. All rights reserved.</div>
+        <div class="footer__disclaimer">Medical information on this site is for informational purposes only and does not constitute medical advice. Individual results vary. Consult your physician before beginning any treatment program.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
